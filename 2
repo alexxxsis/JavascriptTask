@@ -1,0 +1,30 @@
+const getLongestLength = (string) => {
+    let len = 0;
+    let max = 0;
+    let flag = 0;
+    let bukva = 0;
+    let mass = [];     
+    for (let i = 0;  i < string.length+1; i++){
+        console.log(mass)
+        bukva=string[i];
+        if (len > max){
+            max = len;
+        }
+        if(flag!==0){
+        for (let j = 0; j <= i; j++){
+            if (bukva == mass[j]){
+                len = 0
+                mass.length=0;
+                flag=0
+                }
+            }
+        }
+        flag++;
+        len++;
+    mass.push(string[i]);
+    }
+    
+    return max;
+};
+const string= prompt('Введите строку: ');
+console.log(getLongestLength(string));
