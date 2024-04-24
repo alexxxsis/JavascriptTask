@@ -1,0 +1,14 @@
+const LastWordLength = (string) => {
+    let len = 0;
+    for (let i = string.length - 1;  i > -1; i--){
+        if (string[i] != ' '){
+            len++;
+        }
+        else{
+            break;
+        }
+    }
+    return len;
+};
+const string= prompt('Введите строку: ');
+console.log(LastWordLength(string));
