@@ -15,3 +15,4 @@ console.log(get(cities, -1, 'oops')); // 'oops'
 console.log(get(cities, 5, 'oops')); // null
 console.log(get(cities, 6, 'oops')); // undefined
 console.log(get(cities, 7)); // null
+export default"get";
